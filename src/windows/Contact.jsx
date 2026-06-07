@@ -11,8 +11,13 @@ const Contact = () => {
       
     </div>
     <div className='p-5 space-y-5'>
-      <img src="/images/adrian.jpg" alt="Anu"
-      className="w-20 rounded-full" />
+      
+      <img
+  src="/images/Anu.webp.jpeg"
+  alt="Anu"
+  className="w-32 h-32 object-cover rounded-full border"
+/>
+      
       <h3>Let's connect!</h3>
       <p>Whether it’s a project, a role, or just a quick hello — my inbox is open.</p>
       <p>anumishra555555@gmail.com</p>

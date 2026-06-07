@@ -15,19 +15,21 @@ const Terminal = () => {
         show tech stack
       </p>
       <div className="label">
-        <p className="w-32">Category</p>
+        <p>Category</p>
         <p>Technologies</p>
       </div>
       <ul className="content">
         {techStack.map(({category,items})=>(
-          <li key={category} className="flex items-center">
-            <Check className="check" size={20} />
-            <h3>{category}</h3>
-            <ul>
-              {items.map((item,i)=>(
-                <li key={i}>{item}{i<items.length-1 ? ', ' : ''}</li>
+          <li key={category} className="space-y-3">
+            <div className="flex items-center gap-2">
+              <Check className="check" size={20} />
+              <h3>{category}</h3>
+            </div>
+            <div className="tags flex flex-wrap gap-2 ms-10">
+              {items.map((item)=>(
+                <span key={item} className="tag">{item}</span>
               ))}
-            </ul>
+            </div>
           </li>
         ))}
       </ul>

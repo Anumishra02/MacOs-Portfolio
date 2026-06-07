@@ -43,18 +43,6 @@ const dockApps = [
     canOpen: true,
   },
   {
-    id: "safari",
-    name: "Articles", // was "Safari"
-    icon: "safari.png",
-    canOpen: true,
-  },
-  {
-    id: "photos",
-    name: "Gallery", // was "Photos"
-    icon: "photos.png",
-    canOpen: true,
-  },
-  {
     id: "contact",
     name: "Contact", // or "Get in touch"
     icon: "contact.png",
@@ -70,7 +58,7 @@ const dockApps = [
     id: "trash",
     name: "Archive", // was "Trash"
     icon: "trash.png",
-    canOpen: false,
+    canOpen: true,
   },
 ];
 
@@ -101,106 +89,76 @@ const blogPosts = [
 
 const techStack = [
   {
-    category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript"],
+    category: "Languages",
+    items: [
+      "C++",
+      "Python",
+      "JavaScript",
+      "HTML/CSS",
+    ],
   },
   {
-    category: "Mobile",
-    items: ["React Native", "Expo"],
+    category: "Frameworks & Libraries",
+    items: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "Flask",
+      "Tailwind CSS",
+      "Scikit-learn",
+      "Numpy",
+      "Pandas",
+      "Streamlit",
+    ],
   },
   {
-    category: "Styling",
-    items: ["Tailwind CSS", "Sass", "CSS"],
+    category: "Developers Tools",
+    items: [
+      "Git",
+      "GitHub",
+      "VS Code",  
+      "Postman",
+      "MySQL",
+      "MongoDB",
+    ],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    category: "Developer Tools",
+    items: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "Postman",
+      "npm",
+    ],
   },
   {
-    category: "Database",
-    items: ["MongoDB", "PostgreSQL"],
-  },
-  {
-    category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    category: "Core CS",
+    items: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming (OOP)",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
+      "SQL",
+    ],
   },
 ];
-
 const socials = [
   {
     id: 1,
     text: "Github",
     icon: "/icons/github.svg",
     bg: "#f4656b",
-    link: "https://github.com/JavaScript-Mastery-Pro",
+    link: "https://github.com/Anumishra02",
   },
-  {
-    id: 2,
-    text: "Platform",
-    icon: "/icons/atom.svg",
-    bg: "#4bcb63",
-    link: "https://jsmastery.com/",
-  },
-  {
-    id: 3,
-    text: "Twitter/X",
-    icon: "/icons/twitter.svg",
-    bg: "#ff866b",
-    link: "https://x.com/jsmasterypro",
-  },
+  
   {
     id: 4,
     text: "LinkedIn",
     icon: "/icons/linkedin.svg",
     bg: "#05b6f6",
-    link: "https://www.linkedin.com/company/javascriptmastery/posts/?feedView=all",
-  },
-];
-
-const photosLinks = [
-  {
-    id: 1,
-    icon: "/icons/gicon1.svg",
-    title: "Library",
-  },
-  {
-    id: 2,
-    icon: "/icons/gicon2.svg",
-    title: "Memories",
-  },
-  {
-    id: 3,
-    icon: "/icons/file.svg",
-    title: "Places",
-  },
-  {
-    id: 4,
-    icon: "/icons/gicon4.svg",
-    title: "People",
-  },
-  {
-    id: 5,
-    icon: "/icons/gicon5.svg",
-    title: "Favorites",
-  },
-];
-
-const gallery = [
-  {
-    id: 1,
-    img: "/images/gal1.png",
-  },
-  {
-    id: 2,
-    img: "/images/gal2.png",
-  },
-  {
-    id: 3,
-    img: "/images/gal3.png",
-  },
-  {
-    id: 4,
-    img: "/images/gal4.png",
+    link: "https://www.linkedin.com/in/anumish/",
   },
 ];
 
@@ -211,8 +169,6 @@ export {
   blogPosts,
   techStack,
   socials,
-  photosLinks,
-  gallery,
 };
 
 const WORK_LOCATION = {
@@ -225,7 +181,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Nike Ecommerce Website Application",
+      name: "ATSync — AI Resume Analyzer",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5", // icon position inside Finder
@@ -233,30 +189,31 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Nike Project.txt",
+          name: "ATSync.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "The Nike eCommerce website is a sleek and modern platform designed for shopping the latest Nike collections.",
-            "Instead of a simple online store, it delivers an immersive experience with bold visuals, interactive product displays, and smooth navigation.",
-            "Think of it like walking into a flagship Nike store—but right from your phone or laptop.",
-            "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+          "ATSync — AI Resume Analyzer & Interview Copilot",
+          "ATSync is a full-stack AI platform that analyzes resumes against job descriptions and returns a detailed ATS score.",
+          "Built with FastAPI, React, and Google Gemini AI, it performs 7 intelligent checks — keyword matching, skill gap detection, grammar analysis, quantification scoring, and more.",
+          " Users get personalized AI-generated interview questions and a tailored cover letter in seconds. The backend uses NLP-based keyword extraction with Pydantic-validated REST APIs, while the frontend features an interactive resume viewer and animated results dashboard.",
+          " ATSync demonstrates real production-level engineering — from PDF parsing to AI integration to polished deployment.",
           ],
         },
         {
           id: 2,
-          name: "nike.com",
+          name: "ATSync.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/fZdTYswuZjU?si=Awjl-pIst9e09_UU",
+          href: "https://at-sync-sigma.vercel.app/",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "nike.png",
+          name: "ATSync.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -269,7 +226,7 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://github.com/Anumishra02/ATSync",
           position: "top-60 right-20",
         },
       ],
@@ -278,7 +235,7 @@ const WORK_LOCATION = {
     // ▶ Project 2
     {
       id: 6,
-      name: "AI Resume Analyzer",
+      name: "CodeSense AI Resume Analyzer",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -286,30 +243,30 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "AI Resume Analyzer Project.txt",
+          name: "CodeSense AI Resume Analyzer Project.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "AI Resume Analyzer is a smart tool that helps you perfect your resume with instant feedback.",
-            "Instead of guessing what recruiters want, you get AI-powered insights on keywords, formatting, and overall impact.",
-            "Think of it like having a career coach—pointing out strengths, fixing weaknesses, and boosting your chances of landing interviews.",
-            "It's built with Next.js and Tailwind, so it runs fast, looks professional, and works seamlessly on any device.",
-          ],
+  "CodeSense AI is an AI-powered full-stack code review platform built with React.js, Node.js, Express.js, and Google Gemini 2.5 Flash.",
+  "Analyzes source code using NLP-based AI workflows and generates intelligent suggestions on structure, quality, security, and maintainability.",
+  "Features real-time review history, analytics dashboard, GitHub import, and multi-language support — deployed on Vercel and Render.",
+  "Delivers low-latency REST APIs with rate limiting, modular architecture, and developer-friendly UI built with GSAP animations and Glassmorphism design.",
+],
         },
         {
           id: 2,
-          name: "ai-resume-analyzer.com",
+          name: "codesense-ai-resume-analyzer.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/iYOz165wGkQ?si=R1hs8Legl200m0Cl",
+          href: "https://code-sense-ai-phi.vercel.app/",
           position: "top-20 left-20",
         },
         {
           id: 4,
-          name: "ai-resume-analyzer.png",
+          name: "codesense-ai-resume-analyzer.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -322,7 +279,7 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://github.com/Anumishra02/CodeSense-AI",
           position: "top-60 left-5",
         },
       ],
@@ -331,7 +288,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Food Delivery App",
+      name: "BookSense",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -339,30 +296,29 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Food Delivery App Project.txt",
+          name: "BookSense.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Our Food Delivery App is a fast and convenient way to order meals from your favorite restaurants.",
-            "Instead of making calls or waiting in line, you can browse menus, customize orders, and track deliveries in real time.",
-            "Think of it like having your favorite restaurants in your pocket—ready to deliver anytime, anywhere.",
-            "It’s built with React Native, so it works smoothly on both iOS and Android with a clean, modern design.",
+            "BookSense is a comprehensive book recommendation platform that leverages AI to provide personalized reading suggestions.",
+            "It features a user-friendly interface.",
+            "Built with Streamlit, it offers a seamless experience for book lovers and readers.",
           ],
         },
         {
           id: 2,
-          name: "food-delivery-app.com",
+          name: "BookSense.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://youtu.be/LKrX390fJMw?si=cExkuVhf2DTV9G2-",
+          href: "https://github.com/Anumishra02/Book-recommender",
           position: "top-10 right-20",
         },
         {
           id: 4,
-          name: "food-delivery-app.png",
+          name: "BookSense.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
@@ -375,7 +331,7 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://google.com",
+          href: "https://github.com/Anumishra02/Book-recommender",
           position: "top-60 right-20",
         },
       ],
@@ -468,7 +424,7 @@ const TRASH_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-10 left-10",
+      position: "top-5 left-5",
       imageUrl: "/images/trash-1.png",
     },
     {
@@ -477,8 +433,17 @@ const TRASH_LOCATION = {
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
-      position: "top-40 left-80",
+      position: "top-70 left-80",
       imageUrl: "/images/trash-2.png",
+    },
+    {
+      id: 3,
+      name: "trash.png",
+      icon: "/images/image.png",
+      kind: "file",
+      fileType: "img",
+      position: "top-50 left-30",
+      imageUrl: "/images/trash.png",
     },
   ],
 };
@@ -496,11 +461,10 @@ const WINDOW_CONFIG = {
   finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
   imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  trash: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
