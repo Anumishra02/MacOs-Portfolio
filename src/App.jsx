@@ -2,7 +2,6 @@ import { gsap } from "gsap"
 import { Draggable } from "gsap/all"
 import { Dock, Navbar,Welcome } from "#components" 
 import { Terminal,Resume,Finder,Text,Image,Contact,Trash} from "#windows"
-import Terminal from "#windows/Terminal"
 
 
 

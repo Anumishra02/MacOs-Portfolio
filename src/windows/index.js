@@ -1,4 +1,3 @@
-
 import Terminal from "#windows/Terminal"
 import Resume from "#windows/Resume";
 import Finder from "#windows/Finder";
@@ -8,7 +7,4 @@ import Contact from "#windows/Contact";
 import Trash from "#windows/Trash";
 
 export {Terminal,Resume,Finder,Text,Image,Contact,Trash};
-
-import Terminal from "#windows/Terminal.jsx"
-export {Terminal};
 
