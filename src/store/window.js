@@ -26,4 +26,8 @@ const useWindowStore = create(immer((set) => ({
       win.zIndex=state.nextZIndex++;}),
     
 })));
+<<<<<<< HEAD
 export default useWindowStore;
+=======
+export default useWindowStore;
+>>>>>>> 01971d9d1633de4bc2b4dc4911d64cf4c8640538
