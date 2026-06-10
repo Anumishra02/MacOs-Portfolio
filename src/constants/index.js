@@ -313,7 +313,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://github.com/Anumishra02/Book-recommender",
+          href: "https://carval-1.onrender.com/",
           position: "top-10 right-20",
         },
         {
@@ -331,7 +331,7 @@ const WORK_LOCATION = {
           icon: "/images/plain.png",
           kind: "file",
           fileType: "fig",
-          href: "https://github.com/Anumishra02/Book-recommender",
+          href: "https://github.com/Anumishra02/CarVal",
           position: "top-60 right-20",
         },
       ],
