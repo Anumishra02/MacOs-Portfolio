@@ -288,7 +288,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "BookSense",
+      name: "CarVal",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -296,20 +296,20 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "BookSense.txt",
+          name: "CarVal.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "BookSense is a comprehensive book recommendation platform that leverages AI to provide personalized reading suggestions.",
-            "It features a user-friendly interface.",
-            "Built with Streamlit, it offers a seamless experience for book lovers and readers.",
-          ],
+  "CarVal is a car price estimation web app that predicts used car market value across 11 Indian cities using a Gradient Boosting ML model trained on 6,019 real listings.",
+  "Achieves 90% R² accuracy (10-fold cross-validated) with 81% of predictions falling within ₹2 lakh of actual price across 30 brands and 1,800+ models.",
+  "Features auto-fill specs, real-time market comparison (low/avg/high price bands), and a live price meter — built with Flask and deployed on Render.",
+],
         },
         {
           id: 2,
-          name: "BookSense.com",
+          name: "CarVal.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
@@ -318,7 +318,7 @@ const WORK_LOCATION = {
         },
         {
           id: 4,
-          name: "BookSense.png",
+          name: "CarVal.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
