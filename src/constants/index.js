@@ -96,7 +96,6 @@ const techStack = [
       "NLP",
       "PyTorch",
       "TensorFlow",
-      "Keras",
       "scikit-learn",
       "Neural Networks",
       "Gradient Boosting",
