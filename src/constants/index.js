@@ -220,7 +220,7 @@ const WORK_LOCATION = {
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://at-sync-sigma.vercel.app/",
+          href: "https://at-sync-zeta.vercel.app/",
           position: "top-10 right-20",
         },
         {
